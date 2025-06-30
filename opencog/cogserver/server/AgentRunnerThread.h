@@ -93,7 +93,7 @@ class AgentRunnerThread: public AgentRunnerBase
          * is active */
         std::atomic_bool agents_modified;
 
-        /** Protects AgenRunnerBase::agents */
+        /** Protects AgentRunnerBase::agents */
         mutable std::mutex agents_mutex;
 
         /** Agents to be added to the list of scheduled agents */
