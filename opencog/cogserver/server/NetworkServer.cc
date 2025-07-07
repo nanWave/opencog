@@ -101,7 +101,7 @@ void NetworkServer::run()
         } catch (boost::system::system_error& e) {
             logger().error("Error in boost::asio io_service::run() => %s", e.what());
         }
-        usleep(50000); // avoids busy wait
+        usleep(50000); // adds busy wait
     }
     logger().debug("[NetworkServer] end of run");
     _started = false;
