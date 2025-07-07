@@ -57,7 +57,7 @@ namespace opencog
  * (every server sockets binds to 0.0.0.0, i.e., all interfaces). Thus,
  * server sockets are identified/selected by the port they bind to.
  *
- * Another limitation of the network server is that is adds a delay to certain
+ * Another limitation of the network server is that it adds a delay to certain
  * network operations. Due to the way the alhem's sockets library async loop is
  * built around 'select', some operations (such as forwarding a client socket to
  * a separate thread) take a few mili-seconds to complete. This delay is
