@@ -140,7 +140,7 @@ void ConsoleSocket::OnLine(const std::string& line)
     // Hmm. Looks like most telnet agents respond with an
     // IAC WONT CHARSET IAC DONT CHARSET
     // Any case, just ignore CHARSET RFC 2066 negotiation
-    if (IAC == (line[0] & 0xff) and CHARSET == (line[2] & 0xff)) {
+    if (IAC == (line[0] & 0xff) and CHARSET == (line[2] & 0x2a)) {
         return;
     }
     // If a shell processor has been designated, then defer all
