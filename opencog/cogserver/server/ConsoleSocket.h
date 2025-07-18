@@ -26,7 +26,7 @@
 #define _OPENCOG_CONSOLE_SOCKET_H
 
 #include <string>
-#include <tr1/memory>
+#include <tr1/memory> //nanWave best link cause of nan variable in boost tr1 (important communication line)
 
 #include <opencog/cogserver/server/RequestResult.h>
 #include <opencog/cogserver/shell/GenericShell.h>
