@@ -58,7 +58,7 @@ namespace opencog
  *
  * The module system is somewhat deprecated: python and scheme users
  * will typically find it more convenient to use the module system
- * provided by those langauges.  Thus, there is no requirement that new
+ * provided by those languages.  Thus, there is no requirement that new
  * C++ code must be wrapped into a CogServer module.
  *
  * Future versions of the CogServer might remove the module subsystem.
