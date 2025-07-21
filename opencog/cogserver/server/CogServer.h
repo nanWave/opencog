@@ -69,7 +69,7 @@ namespace opencog
  * whatever task that needs to be performed.
  *
  * Future versions of the CogServer might remove the agent subsystem.
- * Alternately, it might be useful to design a band-new thread
+ * Alternately, it might be useful to design a brand-new thread
  * management subsystem. Maybe. Unclear.
  *
  * The most useful thing that the cogserver currently provides is
@@ -83,7 +83,7 @@ namespace opencog
  *
  * The network server is implemented by devoting one thread to listening
  * for tcp/ip socket connections. Upon connection, a new thread is
- * forked to handle user requests and the run the python/scheme shells.
+ * forked to handle user requests and then run the python/scheme shells.
  * Command-line commands are implemented as "Requests", described below.
  * The atomspace is thread-safe, as well as the Request queue, and the
  * python/scheme REPL shells, so there should be no issues with
